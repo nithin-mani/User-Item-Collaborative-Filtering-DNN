@@ -1,0 +1,12 @@
+Here is a short explanation of what each column means:
+
+	“user” - there are 100 different users
+	“item” - there are 28 different items
+	“x” - a covariate that may be helpful in predicting whether a user will like a particular item
+	“observed” - either 0 or 1. Please consider user/item combinations with observed=1 as the training set. The model can be trained using these rows. Please consider user/item combinations with observed=0 as the test set. Remove them before training the model.
+	“liked” - a binary 0/1 variable. 1 means the user liked this item. 0 means they did not like the item.
+ 
+
+Train a model to learn about which items get high ratings from which users. Some items have more likes than others and you will find some interaction between users and items (i.e. some users really like a certain subset of items and different users really like other certain subsets of items. This behaviour is not captured by the covariate “x”). 
+
+I have created a (less than one page) writeup outlining why I made the decisions. This writeup also contain the predicted “liked” probabilities for users 1 through 5 for all the items from their test set.
